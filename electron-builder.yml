@@ -1,0 +1,20 @@
+appId: "com.test.dev"
+productName: "Test"
+
+files:
+  - "./build/**/*"
+  - "./electron.js"
+  - "./src/assets/*"
+  - "./package.json"
+  - "!node_modules"
+
+directories:
+  buildResources: "build"
+  output: "dist"
+
+mac:
+  category: public.app-category.productivity
+  hardenedRuntime: true
+  gatekeeperAssess: false
+  target:
+    - dmg
