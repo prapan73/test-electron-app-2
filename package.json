@@ -1,29 +1,29 @@
 {
   "name": "Test",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "repository": "https://github.com/prapan73/test-electron-app-2.git",
   "author": "Prapan Raphinphithak <34703390+prapan73@users.noreply.github.com>",
   "license": "MIT",
   "main": "main.js",
   "scripts": {
+    "publish": "build -p always",
     "pack": "electron-builder --dir",
-    "dist": "electron-builder"
+    "dist": "electron-builder build --mac --publish always"
   },
   "devDependencies": {
     "electron": "^1.7.9",
-    "electron-builder": "^22.11.7"
+    "electron-builder": "^22.11.7",
+    "electron-updater": "^4.0.0"
   },
   "dependencies": {
-    "electron-log": "^1.3.0",
-    "electron-updater": "^4.0.0"
+    "electron-log": "^1.3.0"
   },
   "build": {
     "appId": "com.test",
     "publish": [
       {
         "provider": "github",
-        "owner": "prapan73",
-        "repo": "test-electron-app-2"
+        "token": "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"
       }
     ],
     "mac": {
