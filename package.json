@@ -1,6 +1,6 @@
 {
   "name": "test-update-electron",
-  "version": "1.1.2",
+  "version": "1.0.2",
   "private": true,
   "main": "public/electron.js",
   "homepage": "./",

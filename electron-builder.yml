@@ -1,6 +1,8 @@
 appId: "com.test.dev"
 productName: "Test"
-
+publish:
+  provider: "generic"
+  url: "https://electron-9e978.web.app"
 files:
   - "./build/**/*"
   - "./electron.js"
